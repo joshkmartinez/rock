@@ -1,0 +1,58 @@
+{
+  "name": "rock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "deploy": "now",
+    "postdeploy": "now alias"
+  },
+  "keywords": [],
+  "author": "Joshua Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.4",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.13.0",
+    "eslint-plugin-react": "^7.12.4",
+    "now": "^14.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "semi": [
+        "error",
+        "never"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ]
+    },
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "browser": true,
+      "es6": true
+    }
+  }
+}
