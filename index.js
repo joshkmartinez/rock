@@ -10,9 +10,6 @@ app.use(function(req, res, next) {
   )
   next()
 })
-api.get(['/hello', '/hi'], (req, res) => {
-  res.send('hi')
-})
 api.get(['/ping', '/pong'], (req, res) => {
   res.send('pong')
 })

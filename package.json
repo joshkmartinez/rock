@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "Joshua Martinez",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "4.16.4",
     "react": "^16.8.2",

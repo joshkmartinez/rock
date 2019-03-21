@@ -2,7 +2,13 @@
   "name": "The Rock",
   "alias": ["rock", "therock", "DwayneJohnson", "actor", "rockstar"],
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server",
+      "config": { "maxLambdaSize": "42mb" }
+    }
+  ],
   "github": {
     "silent": true
   }
